@@ -30,20 +30,26 @@
 
 // Реєстрація користувача
 
-let x = "ми склали про вас таку думку: ви людина";
-let y = "якщо ні то нам всеодно і нікуди ви не напишете на цьому сайті :)"
-let danni = "ваші данні:";
-const userName = prompt('як вас звати?');
+// let x = "ми склали про вас таку думку: ви людина";
+// let y = "якщо ні то нам всеодно і нікуди ви не напишете на цьому сайті :)"
+// let danni = "ваші данні:";
+// const userName = prompt('як вас звати?');
 
-console.log(userName);
+// console.log(userName);
 // const realName = confirm(`чи справді вас звати ${userName}?`)
-const userAge = prompt('скільки вам років?☠️');
-const mail = prompt(`напишіть вашу пошту`);
-const tel = prompt('напишіть ваш номер телефону');
-const city = prompt('який ваш населений пункт?');
-const login = prompt('придумайте ваш логін');
-const password = prompt('придумайте ваш пароль');
-let messageFirst = `${danni}, ${userName}, ${userAge}, ${mail}, ${tel}, ${city}, ${login}, ${password}`;
+// const userAge = prompt('скільки вам років?☠️');
+// const mail = prompt(`напишіть вашу пошту`);
+// const tel = prompt('напишіть ваш номер телефону');
+// const city = prompt('який ваш населений пункт?');
+// const login = prompt('придумайте ваш логін');
+// const password = prompt('придумайте ваш пароль');
+// let messageFirst = `${danni}, ${userName}, ${userAge}, ${mail}, ${tel}, ${city}, ${login}, ${password}`;
 // let message = `ваші данні: ${userNamelName}, ${userAge}, ${mail}, ${tel}, ${city}, ${login}, ${password}.`;
-alert(`${messageFirst}`);
+// alert(`${messageFirst}`);
 // alert(`${x}, ${y}`);
+
+const delivery = 6;
+const backand = 9;
+let total = backand + delivery;
+total = delivery + backand + 1;
+console.log(total);
