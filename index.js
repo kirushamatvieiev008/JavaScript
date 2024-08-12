@@ -48,8 +48,10 @@
 // alert(`${messageFirst}`);
 // alert(`${x}, ${y}`);
 
-const delivery = 6;
-const backand = 9;
-let total = backand + delivery;
-total = delivery + backand + 1;
-console.log(total);
+// const delivery = 6;
+// const backand = 9;
+// let total = backand + delivery;
+// total = delivery + backand + 1;
+// console.log(total);
+
+
