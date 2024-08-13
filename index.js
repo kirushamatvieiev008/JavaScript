@@ -54,4 +54,46 @@
 // total = delivery + backand + 1;
 // console.log(total);
 
+// математичні оператори
 
+// const x = 10;
+// const y = 5;
+// console.log((x + y) * 2);
+// console.log(x - y);
+// console.log(x * y);
+// console.log(x / y);
+// console.log(y % x);
+// let value = 5;
+// value += 10;
+// console.log(value);
+
+// оператори порівняння
+
+// const x = 5;
+// const y = 10;
+// const q = "5";
+// console.log("x > y:", x > y);
+// console.log("x < y:", x < y);
+// console.log("x < q:", x < q);
+// console.log("x <= q:", x <= q);
+// console.log("x = q:", x == q);
+// console.log("x !== q:", x !== q);
+
+// const valueA = "5";
+// console.log(valueA);
+// console.log(Number(valueA));
+// console.log(typeof Number(valueA));
+// const valueB = "red";
+// console.log(Number(valueB));
+
+// console.log(Number.parseInt("5px"));
+// console.log(Number.parseInt("5pxvcdkjbajsdvbjkvkjvjkfvkjdafnkjavkjvjkv39r90438903489038257893847"));
+// console.log(Number.parseInt("pxvcdkjbajsdvbjkvkjvjkfvkjdafnkjavkjvjkvr"));
+
+
+// console.log(Number.parseFloat("12.46kfmwkrbwren21654685"));
+
+const validNumber = Number("52");
+console.log(Number.isNaN(validNumber));
+const invalidNumber = Number("hjhjn");
+console.log(Number.isNaN(invalidNumber));
