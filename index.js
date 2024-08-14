@@ -93,7 +93,47 @@
 
 // console.log(Number.parseFloat("12.46kfmwkrbwren21654685"));
 
-const validNumber = Number("52");
-console.log(Number.isNaN(validNumber));
-const invalidNumber = Number("hjhjn");
-console.log(Number.isNaN(invalidNumber));
+// const validNumber = Number("52");
+// console.log(Number.isNaN(validNumber));
+// const invalidNumber = Number("hjhjn");
+// console.log(Number.isNaN(invalidNumber));
+
+
+// console.log(0.1 + 0.3);
+
+// певертає найбільше ціле число до 15 символа після коми (заокруглює до меншого)
+// console.log(Math.floor(7.99999999999));
+
+// повертає найменше ціле число (якщо число дробове то в консоль пише наступне ціле число)
+// console.log(Math.ceil(1.0000000001));
+
+
+//  заокруглює до найближчого цілого числа
+// console.log(Math.round(1.5));
+
+
+// виводить максимальне число з наведених чисел
+// console.log(Math.max(1.26, 20 , 39, 104.09, 321645));
+
+
+// виводить мінімальне число з наведених чисел
+// console.log(Math.min(3, 5 ,59498498745, 1, 0.00001, 0.254258778));
+
+// геометрична прогресія (зведення в ступінь)
+// console.log(Math.pow(2, 6));
+
+// console.log(Math.random());
+
+// let x = Math.random();
+// let num = Number.parseInt(x);
+// console.log(num)
+
+
+// const min = 1;
+// const max = 10;
+// const randomInteger = Math.floor(Math.random() * (max - min + 1)) + min;
+// console.log(randomInteger);
+
+const randomNumber = Math.random(); // Генерує випадкове число між 0 і 1
+const roundedNumber = Math.round(randomNumber * 10); // Округлює до найближчого цілого числа
+console.log(roundedNumber);
