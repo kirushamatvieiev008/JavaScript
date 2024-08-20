@@ -141,3 +141,35 @@
 // const roundedNumber = Math.round(randomNumber * 10);
 //  Округлює до найближчого цілого числа
 // console.log(roundedNumber);
+
+
+
+
+
+
+
+
+
+
+// lesson 3
+
+
+// const message = `i love ` + `my city ` + `Bucha`;
+// console.log(message);
+// let resoult;
+// resoult = 5 + 10;
+// console.log(resoult);
+// let resoult2 = Number(`5`) + Number(`10`);
+// console.log(resoult2);
+
+const message = `burger`;
+console.log(message.length);
+console.log(message.toLowerCase());
+console.log(message.toUpperCase());
+console.log(message.indexOf(`r`));
+console.log(message.indexOf(`o`));
+console.log(message.includes(`e`));
+console.log(message.startsWith(`r`));
+console.log(message.endsWith(`r`));
+console.log(message.padEnd(9, `!`));
+console.log(message.padStart(9, `!`));
