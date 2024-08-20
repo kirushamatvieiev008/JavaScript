@@ -119,9 +119,8 @@
 // виводить мінімальне число з наведених чисел
 // console.log(Math.min(3, 5 ,59498498745, 1, 0.00001, 0.254258778));
 
-// геометрична прогресія (зведення в ступінь)
-// console.log(Math.pow(2, 6));
-
+// геометрична прогресія (зведення в ступінь) {2, 4, 8, 16 (показує четверте число)} 
+// console.log(Math.pow(2, 4));// 16
 // console.log(Math.random());
 
 // let x = Math.random();
@@ -134,6 +133,11 @@
 // const randomInteger = Math.floor(Math.random() * (max - min + 1)) + min;
 // console.log(randomInteger);
 
-const randomNumber = Math.random(); // Генерує випадкове число між 0 і 1
-const roundedNumber = Math.round(randomNumber * 10); // Округлює до найближчого цілого числа
-console.log(roundedNumber);
+
+
+
+// const randomNumber = Math.random();
+//  Генерує випадкове число між 0 і 1
+// const roundedNumber = Math.round(randomNumber * 10);
+//  Округлює до найближчого цілого числа
+// console.log(roundedNumber);
