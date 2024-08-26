@@ -162,21 +162,21 @@
 // let resoult2 = Number(`5`) + Number(`10`);
 // console.log(resoult2);
 
-// const message = `burger`;
+const message = `               burger`;
 // console.log(message.length);
 // console.log(message.toLowerCase());
 // console.log(message.toUpperCase());
 // console.log(message.indexOf(`r`));
 // console.log(message.indexOf(`o`));
 // console.log(message.includes(`e`));
-// console.log(message.startsWith(`r`));
+// console.log(message.startsWith(`b`));
 // console.log(message.endsWith(`r`));
 // console.log(message.padEnd(9, `!`));
 // console.log(message.padStart(9, `!`));
+console.log(message.trim());
 
 
-
-const car = `porschep`;
-console.log(car.endsWith(`e`));
-console.log(car.startsWith(`e`));
-console.log(car.padEnd(9, p));
+// const car = `porschep`;
+// console.log(car.endsWith(`e`));
+// console.log(car.startsWith(`e`));
+// console.log(car.padEnd(9, p));
