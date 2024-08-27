@@ -162,7 +162,7 @@
 // let resoult2 = Number(`5`) + Number(`10`);
 // console.log(resoult2);
 
-const message = `               burger`;
+// const message = `               burger`;
 // console.log(message.length);
 // console.log(message.toLowerCase());
 // console.log(message.toUpperCase());
@@ -173,10 +173,158 @@ const message = `               burger`;
 // console.log(message.endsWith(`r`));
 // console.log(message.padEnd(9, `!`));
 // console.log(message.padStart(9, `!`));
-console.log(message.trim());
+// console.log(message.trim());
 
 
 // const car = `porschep`;
 // console.log(car.endsWith(`e`));
 // console.log(car.startsWith(`e`));
 // console.log(car.padEnd(9, p));
+
+
+
+
+
+
+// lesson 4
+
+// const num = 20;
+// const result = num > 10 || num < 10;
+// console.log(!true);
+
+// const password = prompt(`enter your password`)
+// if (password.toUpperCase())
+// {
+//     console.log(`q=${password.indexOf(`q`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`w`)) {
+//     console.log(`w=${password.indexOf(`w`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`e`)) {
+//     console.log(`e=${password.indexOf(`e`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`r`)) {
+//     console.log(`r=${password.indexOf(`r`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`t`)) {
+//     console.log(`t=${password.indexOf(`t`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`y`)) {
+//     console.log(`y=${password.indexOf(`y`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`u`)) {
+//     console.log(`u=${password.indexOf(`u`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`i`)) {
+//     console.log(`i=${password.indexOf(`i`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`o`)) {
+//     console.log(`o=${password.indexOf(`o`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`p`)) {
+//     console.log(`p=${password.indexOf(`p`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`a`)) {
+//     console.log(`a=${password.indexOf(`a`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`s`)) {
+//     console.log(`s=${password.indexOf(`s`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`d`)) {
+//     console.log(`d=${password.indexOf(`d`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`f`)) {
+//     console.log(`f=${password.indexOf(`f`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`g`)) {
+//     console.log(`g=${password.indexOf(`g`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`h`)) {
+//     console.log(`h=${password.indexOf(`h`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`j`)) {
+//     console.log(`j=${password.indexOf(`j`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`k`)) {
+//     console.log(`k=${password.indexOf(`k`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`l`)) {
+//     console.log(`l=${password.indexOf(`l`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`z`)) {
+//     console.log(`z=${password.indexOf(`z`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`x`)) {
+//     console.log(`x=${password.indexOf(`x`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`c`)) {
+//     console.log(`c=${password.indexOf(`c`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`v`)) {
+//     console.log(`v=${password.indexOf(`v`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`b`)) {
+//     console.log(`b=${password.indexOf(`b`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`n`)) {
+//     console.log(`n=${password.indexOf(`n`)}`);
+    
+// }
+
+// else if (subscription === password.includes(`m`)) {
+//     console.log(`m=${password.indexOf(`m`)}`);
+    
+// }
+
+// else {
+//     confirm(`you entered incorect password`)
+// }
+// console.log(cost);
