@@ -328,3 +328,61 @@
 //     confirm(`you entered incorect password`)
 // }
 // console.log(cost);
+
+// const x = 10;
+// if (x!==10) {
+//     console.log(`number more than 10 or less 30`);
+    
+// }
+
+// else {
+//     console.log(`number less 10 or more 30`);
+    
+// }
+
+// const age = prompt(`enter your age 🧐`);
+// let type = age>=18 ? alert(`adult😇`) : alert('child💩');
+
+// if (prompt(`Яка “офіційна” назва JavaScript`) === `ECMAScript`) {
+//     alert(`correct`)
+// }
+// else {
+//     alert(`Ви не знаєте? ECMAScript!`)
+// }
+
+// let a = 1;
+// let b = 3;
+// let result = (a + b < 4) ? `Нижчe` : `Вище`;
+// console.log(result);
+
+const isOnline = false;
+const isFriend = true;
+const isDnd = false;
+
+if (isDnd && isFriend && isOnline) {
+    
+}
+
+// let x = prompt(`enter your number`)
+// if (x>=1) {;
+//     alert(1)
+
+// }
+// else if (x===0) {
+//     alert(0)
+// }
+
+// else {
+//     alert(-1)
+// }
+
+// let type
+
+// if (age >= 18) {
+//   type = 'adult';
+//   alert(`you can enter to the site 😇`)
+  
+// } else {
+//   type = 'child';
+//   alert(`u cant enter to the site, goodbay 💩`)
+// }
