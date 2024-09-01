@@ -192,141 +192,267 @@
 // const result = num > 10 || num < 10;
 // console.log(!true);
 
-// const password = prompt(`enter your password`)
-// if (password.toUpperCase())
+// let password = prompt(`enter your password`);
+// password.toLowerCase();
+// if (password.includes(`q`))
 // {
 //     console.log(`q=${password.indexOf(`q`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`w`)) {
-//     console.log(`w=${password.indexOf(`w`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`e`)) {
-//     console.log(`e=${password.indexOf(`e`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`r`)) {
-//     console.log(`r=${password.indexOf(`r`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`t`)) {
-//     console.log(`t=${password.indexOf(`t`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`y`)) {
-//     console.log(`y=${password.indexOf(`y`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`u`)) {
-//     console.log(`u=${password.indexOf(`u`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`i`)) {
-//     console.log(`i=${password.indexOf(`i`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`o`)) {
-//     console.log(`o=${password.indexOf(`o`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`p`)) {
-//     console.log(`p=${password.indexOf(`p`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`a`)) {
-//     console.log(`a=${password.indexOf(`a`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`s`)) {
-//     console.log(`s=${password.indexOf(`s`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`d`)) {
-//     console.log(`d=${password.indexOf(`d`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`f`)) {
-//     console.log(`f=${password.indexOf(`f`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`g`)) {
-//     console.log(`g=${password.indexOf(`g`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`h`)) {
-//     console.log(`h=${password.indexOf(`h`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`j`)) {
-//     console.log(`j=${password.indexOf(`j`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`k`)) {
-//     console.log(`k=${password.indexOf(`k`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`l`)) {
-//     console.log(`l=${password.indexOf(`l`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`z`)) {
-//     console.log(`z=${password.indexOf(`z`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`x`)) {
-//     console.log(`x=${password.indexOf(`x`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`c`)) {
-//     console.log(`c=${password.indexOf(`c`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`v`)) {
-//     console.log(`v=${password.indexOf(`v`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`b`)) {
-//     console.log(`b=${password.indexOf(`b`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`n`)) {
-//     console.log(`n=${password.indexOf(`n`)}`);
-    
-// }
-
-// else if (subscription === password.includes(`m`)) {
-//     console.log(`m=${password.indexOf(`m`)}`);
-    
 // }
 
 // else {
-//     confirm(`you entered incorect password`)
+//     console.log(`no q`);
+    
 // }
+
+// if (password.includes(`r`))
+// {
+//     console.log(`r=${password.indexOf(`r`)}`);
+// }
+    
+// else {
+//     console.log(`no r`);
+        
+// }
+
+// if (password.includes(`w`))
+//     {
+//         console.log(`w=${password.indexOf(`w`)}`);
+//     }
+        
+//     else {
+//         console.log(`no w`);
+            
+//     }
+
+// if (password.includes(`e`))
+//     {
+//         console.log(`e=${password.indexOf(`e`)}`);
+//     }
+        
+//     else {
+//         console.log(`no e`);
+            
+//     }
+
+// if (password.includes(`t`))
+//     {
+//         console.log(`t=${password.indexOf(`t`)}`);
+//     }
+        
+//     else {
+//         console.log(`no t`);
+            
+//     }
+
+// if (password.includes(`y`))
+//     {
+//         console.log(`y=${password.indexOf(`y`)}`);
+//     }
+        
+//     else {
+//         console.log(`no y`);
+            
+//     }
+
+// if (password.includes(`u`))
+//     {
+//         console.log(`u=${password.indexOf(`u`)}`);
+//     }
+        
+//     else {
+//         console.log(`no u`);
+            
+//     }
+
+// if (password.includes(`i`))
+//     {
+//         console.log(`i=${password.indexOf(`i`)}`);
+//     }
+        
+//     else {
+//         console.log(`no i`);
+            
+//     }
+
+// if (password.includes(`o`))
+//     {
+//         console.log(`o=${password.indexOf(`o`)}`);
+//     }
+        
+//     else {
+//         console.log(`no o`);
+            
+//     }
+
+// if (password.includes(`p`))
+//     {
+//         console.log(`p=${password.indexOf(`p`)}`);
+//     }
+        
+//     else {
+//         console.log(`no p`);
+            
+//     }
+
+// if (password.includes(`a`))
+//     {
+//         console.log(`a=${password.indexOf(`a`)}`);
+//     }
+        
+//     else {
+//         console.log(`no a`);
+            
+//     }
+
+// if (password.includes(`s`))
+//     {
+//         console.log(`s=${password.indexOf(`s`)}`);
+//     }
+        
+//     else {
+//         console.log(`no s`);
+            
+//     }
+
+// if (password.includes(`d`))
+//     {
+//         console.log(`d=${password.indexOf(`d`)}`);
+//     }
+        
+//     else {
+//         console.log(`no d`);
+            
+//     }
+
+// if (password.includes(`f`))
+//     {
+//         console.log(`f=${password.indexOf(`f`)}`);
+//     }
+        
+//     else {
+//         console.log(`no f`);
+            
+//     }
+
+// if (password.includes(`g`))
+//     {
+//         console.log(`g=${password.indexOf(`g`)}`);
+//     }
+            
+//     else {
+//         console.log(`no g`);
+                
+//     }
+
+// if (password.includes(`h`))
+//     {
+//         console.log(`h=${password.indexOf(`h`)}`);
+//     }
+            
+//     else {
+//         console.log(`no h`);
+                
+//     }
+
+// if (password.includes(`j`))
+//     {
+//         console.log(`j=${password.indexOf(`j`)}`);
+//     }
+            
+//     else {
+//         console.log(`no j`);
+                
+//     }
+
+// if (password.includes(`k`))
+//     {
+//         console.log(`k=${password.indexOf(`k`)}`);
+//     }
+            
+//     else {
+//         console.log(`no k`);
+                
+//     }
+
+// if (password.includes(`l`))
+//     {
+//         console.log(`l=${password.indexOf(`l`)}`);
+//     }
+            
+//     else {
+//         console.log(`no l`);
+                
+//     }
+
+// if (password.includes(`z`))
+//     {
+//         console.log(`z=${password.indexOf(`z`)}`);
+//     }
+            
+//     else {
+//         console.log(`no z`);
+                
+//     }
+
+// if (password.includes(`x`))
+//     {
+//         console.log(`x=${password.indexOf(`x`)}`);
+//     }
+            
+//     else {
+//         console.log(`no x`);
+                
+//     }
+
+// if (password.includes(`c`))
+//     {
+//         console.log(`c=${password.indexOf(`c`)}`);
+//     }
+            
+//     else {
+//         console.log(`no c`);
+                
+//     }
+
+// if (password.includes(`v`))
+//     {
+//         console.log(`v=${password.indexOf(`v`)}`);
+//     }
+            
+//     else {
+//         console.log(`no v`);
+                
+//     }
+
+// if (password.includes(`b`))
+//     {
+//         console.log(`b=${password.indexOf(`b`)}`);
+//     }
+            
+//     else {
+//         console.log(`no b`);
+                
+//     }
+
+// if (password.includes(`n`))
+//     {
+//         console.log(`n=${password.indexOf(`n`)}`);
+//     }
+            
+//     else {
+//         console.log(`no n`);
+                
+//     }
+
+// if (password.includes(`m`))
+//     {
+//         console.log(`m=${password.indexOf(`m`)}`);
+//     }
+            
+//     else {
+//         console.log(`no m`);
+                
+//     }
 // console.log(cost);
 
 // const x = 10;
@@ -355,13 +481,13 @@
 // let result = (a + b < 4) ? `Нижчe` : `Вище`;
 // console.log(result);
 
-const isOnline = false;
-const isFriend = true;
-const isDnd = false;
+// const isOnline = false;
+// const isFriend = true;
+// const isDnd = false;
 
-if (isDnd && isFriend && isOnline) {
+// if (isDnd && isFriend && isOnline) {
     
-}
+// }
 
 // let x = prompt(`enter your number`)
 // if (x>=1) {;
@@ -386,3 +512,4 @@ if (isDnd && isFriend && isOnline) {
 //   type = 'child';
 //   alert(`u cant enter to the site, goodbay 💩`)
 // }
+
