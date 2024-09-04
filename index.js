@@ -513,3 +513,48 @@
 //   alert(`u cant enter to the site, goodbay 💩`)
 // }
 
+// lesson 5
+
+
+// let cost;
+// const subscription = prompt(`enter the day of the week`);
+// switch (subscription) {
+//     case 'monday':
+//       cost = `work day, go work!`;
+//       break;
+//   case 'tuesday':
+//     cost = `work day, go work!`;
+//     break;
+//   case 'wednesday':
+//     cost = `work day, go work!`;
+//     break;
+//     case 'thursday':
+//     cost = `work day, go work!`;
+//     break;
+//     case 'friday':
+//     cost = `work day, go work!`;
+//     break;
+//     case 'saturday':
+//     cost = `chill`;
+//     break;
+//     case 'sunday':
+//     cost = `chill`;
+//     break;
+//   default:
+//     console.log('holidays, chill)');
+// }
+// console.log(cost); // 500
+
+
+let random = Math.round(Math.random() * 100);
+let x;
+switch (random) {
+    case (random >= 55 && random <= 99):
+        x ="Число потрапляє в діапазон";
+        
+        break;
+
+    default:
+        x = `Число ${random} не потрапляє в діапазон`;
+}
+console.log(x);
