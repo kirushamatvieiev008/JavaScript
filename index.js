@@ -546,15 +546,55 @@
 // console.log(cost); // 500
 
 
-let random = Math.round(Math.random() * 100);
-let x;
-switch (random) {
-    case (random >= 55 && random <= 99):
-        x ="Число потрапляє в діапазон";
+// let random = Math.round(Math.random() * 100);
+// let x;
+// switch (random) {
+//     case (random >= 55 && random <= 99):
+//         x ="Число потрапляє в діапазон";
         
-        break;
+//         break;
 
-    default:
-        x = `Число ${random} не потрапляє в діапазон`;
-}
-console.log(x);
+//     default:
+//         x = `Число ${random} не потрапляє в діапазон`;
+// }
+// console.log(x);
+
+// let day = prompt(`enter the day of week`);
+// let x;
+// switch (day) {
+//     case day = `monday`:
+//     x = `go work`;
+//     break;
+
+//     case day = `tuesday`:
+//     x = `go work`;
+//     break;
+
+//     case day = `wensday`:
+//     x = `go work`;
+//     break;
+
+//     case day = `thursday`:
+//     x = `go work`;
+//     break;
+
+//     case day = `friday`:
+//     x = `go work`;
+//     break;
+
+//     case day = `saturday`:
+//     x = `chill`;
+//     break;
+
+//     case day = `sunday`:
+//     x = `chill`;
+//     break;
+// }
+
+// console.log(x);
+
+
+let day = prompt(`enter the day of the week`)
+let x;
+
+if (day === ``)
