@@ -594,7 +594,203 @@
 // console.log(x);
 
 
-let day = prompt(`enter the day of the week`)
-let x;
 
-if (day === ``)
+
+
+// let day = parseInt(prompt("Введіть номер дня тижня (1-7):")); // Отримуємо номер дня від користувача
+// let dayName;
+
+// switch (day) {
+//   case 1:
+//     dayName = "Понеділок";
+//     console.log("Вибрано день:", dayName);
+//     break;
+//   case 2:
+//     dayName = "Вівторок";
+//     console.log("Вибрано день:", dayName);
+//     break;
+//   case 3:
+//     dayName = "Середа";
+//     console.log("Вибрано день:", dayName);
+//     break;
+//   case 4:
+//     dayName = "Четвер";
+//     console.log("Вибрано день:", dayName);
+//     break;
+//   case 5:
+//     dayName = "П'ятниця";
+//     console.log("Вибрано день:", dayName);
+//     break;
+//   case 6:
+//     dayName = "Субота";
+//     console.log("Вибрано день:", dayName);
+//     break;
+//   case 7:
+//     dayName = "Неділя";
+//     console.log("Вибрано день:", dayName);
+//     break;
+//   default:
+//     dayName = "Невірний номер дня";
+//     console.log(dayName);
+// }
+
+// console.log("Назва дня:", dayName);
+
+
+
+
+// let day = prompt(`enter the day of the week`)
+// let x;
+
+// if (day === `monday`) {
+//     x = `go work`;
+// } else if (day === `tuesday`) {
+//     x = `go work`;
+// } else if (day === `wednesday`) {
+//     x = `go work`;
+// } else if (day === `thursday`) {
+//     x = `go work`;
+// } else if (day === `friday`) {
+//     x = `go work`;
+// } else if (day === `saturday`) {
+//     x = `chill`;
+// } else if (day === `sunday`) {
+//     x = `chill`;
+// } else {
+//     x = `you entered day of the day incorrect`
+// }
+
+// console.log(x);
+
+// let x = Math.round(Math.random() * 100);
+// let b;
+
+// if (x >= 55 && x <= 99) {
+//     b = `число входить`;
+    
+// } else {
+//     b = `число не входить`;
+// }
+// console.log(b);
+// console.log(x);
+
+// let x = Math.round(Math.random() * 100);
+// let b;
+// // console.log(b);
+
+// switch (x) {
+//     case x >= 55 && x <= 99:
+//         b = `число входить`;
+//         break;
+    
+//     case x < 55 || x > 99:
+//         b = `число не входить`;
+//         break;
+// }
+// console.log(b);
+
+// console.log(x);
+
+
+
+// const value = 5;
+// if (true) {
+//   console.log('Block scope: ', value);
+// }
+// console.log('Global scope: ', value); 
+
+// if (true) {
+//     const value = 5;
+//     console.log('Block scope: ', value); // 5 
+//   }
+//   console.log('Global scope: ', value); // ``   
+
+
+// const global = 'global';
+
+
+// if (true) {
+//   const blockA = 'block A';
+
+
+//   Бачимо глобальну + локальну A
+//   console.log(global); 
+//   'global'
+//   console.log(blockA); 
+  //   block A
+  
+  
+  /*
+  * Змінні blockB і blockC не знайдені в доступних областях видимості.
+  * Буде помилка звернення до змінної.
+  */
+ //  console.log(blockC); 
+ //  console.log(blockB);
+  
+  
+//   if (true) {
+    
+    //   const blockB = 'block B';
+    // Бачимо глобальну + внутрішню A + локальну B
+    // console.log(global); 
+    // global
+    // console.log(blockA);
+     // block A
+    // console.log(blockB); 
+    // block B
+    /*
+     * Змінна blockC не знайдена в доступних областях видимості.
+     * Буде помилка звернення до змінної.
+     */
+    // console.log(blockC); 
+    // ReferenceError: blockC is not defined
+// }
+// }
+// if (true) {
+//   const blockC = 'block C';
+  // Бачимо глобальну + локальну C
+//   console.log(global); // global
+//   console.log(blockC); // block C
+  /*
+   * Змінні blockA і blockB не знайдені в доступних областях видимості.
+   * Буде помилка звернення до змінної.
+   */
+//   console.log(blockA); 
+  // ReferenceError: blockA is not defined
+//   console.log(blockB); 
+  // ReferenceError: blockB is not defined
+// }
+// Бачимо тільки глобальну
+// console.log(global); // global
+/*
+ * Змінні blockA, blockB і blockC не знайдені в доступних областях видимості.
+ * Буде помилка звернення до змінної.
+ */
+// console.log(blockA);
+ // ReferenceError: blockA is not defined
+// console.log(blockB);
+ // ReferenceError: blockB is not defined
+// console.log(blockC); 
+// ReferenceError: blockC is not defined
+
+// const b = 10;
+
+
+// if (true) {
+//     const a = 5;
+//     console.log(a);
+//     console.log(b);
+// }
+// console.log(a);
+
+
+// if (true) {
+//   const b = 10;
+
+
+//   console.log(a);
+//   console.log(b);
+// }
+
+
+// console.log(b);
