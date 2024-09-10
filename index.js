@@ -794,3 +794,46 @@
 
 
 // console.log(b);
+
+// let clientCounter = 18;
+// const maxClients = 25;
+
+
+// while (clientCounter < maxClients) {
+//   console.log(clientCounter);
+//   clientCounter += 1;
+// }
+
+// if (clientCounter === maxClients) {
+//   confirm(`too much`)
+// } 
+
+
+
+// Генеруємо випадкове число від 1 до 10
+// const secretNumber = Math.floor(Math.random() * 10) + 1;
+// let guess;
+// let attempts = 0;
+// const maxAttempts = 3;
+
+// Цикл while, що працює, поки користувач не вгадає або не закінчаться спроби
+// while (guess !== secretNumber && attempts < maxAttempts) {
+//   guess = parseInt(prompt("Вгадайте число від 1 до 10: "));
+  
+//     if (guess === secretNumber) {
+//         console.log("Вітаємо! Ви вгадали число.");
+//     } else {
+//         console.log("Неправильно, спробуйте ще раз.");
+//         attempts++;
+//     }
+// }
+
+// Перевірка, чи закінчилися спроби
+// if (attempts === maxAttempts && guess !== secretNumber) {
+//     console.log(`Ви не вгадали число. Правильна відповідь: ${secretNumber}`);
+// }
+
+while (true) {
+  console.log("Ти застряг у нескінченному циклі! 😂");
+  
+}
