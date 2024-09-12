@@ -833,8 +833,45 @@
 //     console.log(`Ви не вгадали число. Правильна відповідь: ${secretNumber}`);
 // }
 
-while (true) {
-  console.log(`ви взламані чекаю гроші на таку картку 4441114431841251)`);
-  
-  
+
+// let tri = 3;
+// let usedTry = 0;
+// let guess;
+// let randNum = Math.floor(Math.random() * 10);
+
+
+// while (usedTry <= tri && guess != randNum)
+
+// let password;
+// do {
+//   password = prompt(`enter ur email`);
+// } while (!password.includes(`@`));
+// console.log(`u wrote this password`);
+
+// const max = 10;
+// for (let i = 0; i <= max; i += 1) {
+//   console.log(i);
+// }
+
+// const target = 3;
+// let sum = 0;
+// for (let i = 0; i <= target; i += 1) {
+//   sum += i;
+  //  1 + 2 + 3
+// }
+// console.log(sum);
+
+// for (let i = 0; i < 10; i += 1) {
+//   if (i === 5) {
+//     console.log(i);
+//       break;
+//   }
+// }
+
+const number = 10;
+for (let i = 0; i < number; i += 1) {
+  if (i % 2 === 0) {
+    continue;
+  }
+  console.log('Непарне i: ', i); // 1, 3, 5, 7, 9
 }
