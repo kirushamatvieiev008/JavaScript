@@ -868,10 +868,91 @@
 //   }
 // }
 
-const number = 10;
-for (let i = 0; i < number; i += 1) {
-  if (i % 2 === 0) {
-    continue;
+// const number = 10;
+// for (let i = 0; i < number; i += 1) {
+//   if (i % 2 === 0) {
+//     continue;
+//   }
+//   console.log('Непарне i: ', i); // 1, 3, 5, 7, 9
+// }
+
+
+// let message= `welcome, to Kyiv`;
+
+// console.log(message.split(','));
+
+
+// let megapolises = [`New York`, `Tokyo`, `Laswegas`, `Bucha`, `Odessa`, `Lviv`, `Kyiv`, `Pekin`];
+
+// console.log(megapolises.join(`, `));
+let nums = [5, 4, 8, 19, 54, 30, 2];
+let r = Math.floor(Math.random() * 10);
+
+for (i = 0; i < 100; i += 1) {
+  let q = Math.floor(Math.random() * 10)
+  if (q > 7) {
+    for (i = 0; i < 100; i += 1) {
+      let z = Math.floor(Math.random() * 10);
+      if (z > 7) {
+        continue
+      }
+
+      if (z < 2) {
+        continue
+      }
+
+      if (z > 2 && z < 7) {
+        let c = q - z;
+        console.log(r - c);
+        // console.log(15);
+        
+        
+        break
+      }
+
+      // console.log(c);
+      
+      // console.log(z);
+    }
+    break
+        
   }
-  console.log('Непарне i: ', i); // 1, 3, 5, 7, 9
+
+  if (r < 7) {
+    break
+    
+  }
+  
+  console.log(r);
+  
 }
+
+// console.log(r);
+
+
+// if (r > 7) {
+//   r - Math.floor(Math.random() * 10);
+//   console.log(r);
+  
+// }
+
+// for (i = 0; i < 2; i += 1) {
+//   r - Math.floor(Math.random() * 10);
+//   console.log(r);
+  
+// }
+
+// for (i = 0; )
+// console.log(nums[r]);
+
+// let random = Math.floor(Math.random() * nums.length + 1);
+// let randomNum = nums[random]
+// console.log(randomNum);
+
+
+// for (i = 0; i <= 9; i += 1) {
+//   if (nums.includes(random)) {
+//     console.log(nums.indexOf(random) + 1);
+     
+//   }
+// }
