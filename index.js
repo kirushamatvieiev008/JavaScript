@@ -958,11 +958,48 @@
 // }
 
 
-// const fruits = 'apple';
+// const redFruits = ['chili', `tomato`, 'cherry', 'apple'];
+// const fruit = `apple`;
 
-// if (fruits === 'apple' || fruits === 'lemmon') {
-//   console.log('my favorite fruitxxxxxxxxxx');
+// if (redFruits.includes(fruit)) {
+//   redFruits.pop()
   
+//   console.log(redFruits);
 // }
+  
+//   else {
+//     // console.log(`we dont have this fruit in our base of data`);
+    
+//   }
 
-console.log(`sfwrb wrbwrbt`);
+//   console.log(redFruits);
+  
+// console.log(`sfwrb wrbwrbt`);
+
+
+// const clients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+
+// // Поверне новий масив в якому будуть елементи з індексами від 1 до 2
+// console.log(clients.slice(0, 3));
+
+// Припустимо, у нас є масив оцінок, який містить п'ять чисел від 1 до 5.
+// const scores = [1, 2, 3, 4, 5];
+
+
+// // Наступна операція видаляє три елементи масиву,
+// // починаючи з першого елемента (індекс 0).
+// const deletedScores = scores.splice(0, 3);
+
+
+// // Тепер масив scores містить два елементи.
+// console.log(scores); // [4, 5]
+
+
+// Припустимо, що у вас є масив з назвами квітів у вигляді рядків.
+const colors = ['red', 'green', 'blue'];
+
+// Наступна операція поміщає один новий елемент перед другим елементом.
+colors.splice(3, 0, 'purple');
+
+// Тепер масив квітів містить чотири елементи з новим елементом, вставленим в другу позицію.
+console.log(colors); // ["red", "green", "purple", "blue"]
