@@ -1049,15 +1049,49 @@
 // console.log(x);
 
 
-const fnA = function() {
-    console.log('Почала виконуватися [fnA]');
-    fnB();
-    console.log('Продовжила виконуватися [fnA] після виходу з [fnB]');
-  }; 
-  const fnB = function() {
-    console.log('Виконується [fnB]');
-  }; 
-  console.log('Почав виконання [main]');
-  fnA();
-  console.log('Продовжив виконуватися [main] після виходу з [fnA]'); 
+// const fnA = function() {
+//     console.log('Почала виконуватися [fnA]');
+//     fnB();
+//     console.log('Продовжила виконуватися [fnA] після виходу з [fnB]');
+//   }; 
+//   const fnB = function() {
+//     console.log('Виконується [fnB]');
+//   }; 
+//   console.log('Почав виконання [main]');
+//   fnA();
+//   console.log('Продовжив виконуватися [main] після виходу з [fnA]'); 
 
+// const numbers = function(a, b, c = 5) {
+//   return a * b * c;
+// }
+
+// console.log(numbers(1, 3));
+
+// const sum = function() {
+//   let total = 0; 
+//   for (const argument of arguments) {
+//     total += argument;
+//   } 
+//   return total;
+// }; 
+// console.log(sum(1, 2, 3));
+
+// const fn = function() {
+//   const args = Array.from(arguments);
+// };
+
+function findMaxNumber(array) {
+  let max = array[0];
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] > max) {
+      max = array[i];
+    }
+      }
+      return max;
+  
+}
+
+
+let array = [1, 3, 2, 5, 45];
+let max = findMaxNumber(array);
+console.log(max); // 5
