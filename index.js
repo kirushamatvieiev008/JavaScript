@@ -1080,18 +1080,55 @@
 //   const args = Array.from(arguments);
 // };
 
-function findMaxNumber(array) {
-  let max = array[0];
-  for (let i = 0; i < array.length; i += 1) {
-    if (array[i] > max) {
-      max = array[i];
-    }
-      }
-      return max;
+// function findMaxNumber(array) {
+//   let max = array[0];
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (array[i] > max) {
+//       max = array[i];
+//     }
+//       }
+//       return max;
+  
+// }
+
+
+// let array = [1, 3, 2, 5, 45];
+// let max = findMaxNumber(array);
+// console.log(max); // 5
+
+// const withdraw1 = function(amount, balance) {
+//   if (amount === 0) {
+//     console.log('Для проведення операції введіть суму більше нуля.');
+//   } else if (amount > balance) {
+//     console.log('Недостатньо коштів на рахунку.');
+//   } else {
+//     console.log('Операція зняття коштів проведена.');
+//   }
+// }; 
+// withdraw1(0, 300);
+
+
+
+// const withdraw = function(amount, balance) {
+
+//   if (amount === 0) {
+//     console.log('Для проведення операції введіть суму більше нуля.');
+//     return;
+//   } 
+  
+//   if (amount > balance) {
+//     console.log('Недостатньо коштів на рахунку.');
+//     return;
+//   } 
+
+//   console.log('Операція зняття коштів проведена.');
+// }; 
+
+// withdraw(0, 300);
+
+const griting = function(name) {
+  console.log(`hello, ${name}`);
   
 }
 
-
-let array = [1, 3, 2, 5, 45];
-let max = findMaxNumber(array);
-console.log(max); // 5
+griting('Kiril');
