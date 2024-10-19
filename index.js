@@ -1126,9 +1126,17 @@
 
 // withdraw(0, 300);
 
-const griting = function(name) {
-  console.log(`hello, ${name}`);
+// const griting = function(name) {
+//   console.log(`hello, ${name}`);
   
-}
+// }
 
-griting('Kiril');
+// griting('Kiril');
+
+// const add = function(a, b, c) {
+//   return a + b + c;
+// }
+
+
+const add = (a, b, c) => a + b + c;
+console.log(add(1, 2, 3));
