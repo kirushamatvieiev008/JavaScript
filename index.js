@@ -1138,5 +1138,43 @@
 // }
 
 
-const add = (a, b, c) => a + b + c;
-console.log(add(1, 2, 3));
+// const add = (a, b, c) => a + b + c;
+// console.log(add(1, 2, 3));
+
+// const add = (...args) => {
+//   console.log(args);
+  
+// };
+// add(1, 2, 5);
+
+// const bar = function () {
+//   console.log('bar');
+// };
+
+// const baz = function () {
+//   console.log('baz');
+// };
+
+// const foo = function () {
+//   bar();
+//   baz();
+//   console.log('foo');
+// };
+
+// foo();
+
+// const myNewArrow = (...add) => {
+//   console.log(add);
+  
+// }
+
+// myNewArrow(1, 3, 4, 5, 8);
+
+const hello = () => {
+  console.log(`hello_JS`);
+return;
+
+}
+
+// console.log(hello[]);
+hello()
