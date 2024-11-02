@@ -1181,11 +1181,59 @@
 
 
 
-const hotel = {
-  name: 'Resort Hotel',
-  stars: 5,
-  capacity: 100,
-};
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capacity: 100,
+// };
 
 
-console.log(hotel.);
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capacity: 100,
+//   greetIn() {
+//     console.log('Welcome!');
+//   },
+// };
+
+// hotel.greetIn();
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capacity: 100,
+//   showName() {
+//     console.log(this.name);
+//   },
+//   changeCapacity(value) {
+//     this.capacity = value;
+//   },
+// };
+
+// hotel.showName();
+// hotel.changeCapacity(200);
+// console.log(hotel.capacity);
+
+const restourant = {
+  tables: 15,
+  menu: [`carbonara`, `pesto`, `Margaritta`, `cesar`, `cakes`, `napoleon`],
+  work: `from 9 to 23`,
+  freeTables: true,
+  allTables(value) {
+    this.tables = value;
+  },
+
+  canTakeTablet() {
+    this.freeTables = false;
+  }
+}
+
+restourant.allTables(20);
+console.log(restourant.tables);
+restourant.canTakeTablet();
+console.log(restourant.freeTables);
+
+
+
