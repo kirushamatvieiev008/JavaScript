@@ -1170,11 +1170,22 @@
 
 // myNewArrow(1, 3, 4, 5, 8);
 
-const hello = () => {
-  console.log(`hello_JS`);
-return;
+// const hello = () => {
+//   console.log(`hello_JS`);
+// return;
 
-}
+// }
 
-// console.log(hello[]);
-hello()
+// // console.log(hello[]);
+// hello()
+
+
+
+const hotel = {
+  name: 'Resort Hotel',
+  stars: 5,
+  capacity: 100,
+};
+
+
+console.log(hotel.);
