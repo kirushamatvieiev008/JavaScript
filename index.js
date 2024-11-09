@@ -1216,24 +1216,65 @@
 // hotel.changeCapacity(200);
 // console.log(hotel.capacity);
 
-const restourant = {
-  tables: 15,
-  menu: [`carbonara`, `pesto`, `Margaritta`, `cesar`, `cakes`, `napoleon`],
-  work: `from 9 to 23`,
-  freeTables: true,
-  allTables(value) {
-    this.tables = value;
-  },
+// const restourant = {
+//   tables: 15,
+//   menu: [`carbonara`, `pesto`, `Margaritta`, `cesar`, `cakes`, `napoleon`],
+//   work: `from 9 to 23`,
+//   freeTables: true,
+//   allTables(value) {
+//     this.tables = value;
+//   },
 
-  canTakeTablet() {
-    this.freeTables = false;
+//   canTakeTablet() {
+//     this.freeTables = false;
+//   }
+// }
+
+// restourant.allTables(20);
+// console.log(restourant.tables);
+// restourant.canTakeTablet();
+// console.log(restourant.freeTables);
+
+
+
+// const airport = {
+//   name: `zhulyany`,
+//   planes: 26,
+//   teamates: 270,
+//   flight: 20,
+//   visitours: 500,
+//   inUkraine: true,
+//   newTeamates(value) {
+//     this.teamates = value;
+
+//   }
+// }
+
+// airport.newTeamates(200);
+// console.log(airport.teamates);
+
+// const airport_2 = {
+//   name: `Brovary`,
+//   planes: 23,
+//   teamates: 180,
+//   flight: 17,
+//   visitours: 700,
+//   inUkraine: true,
+//   newTeamates(value) {
+//     this.teamates = value;
+
+//   }
+// }
+
+const person = {
+  name: westSide,
+  tracks: 30,
+  albom: 13,
+  concerts: 20,
+  repers: 10,
+  newTracks(value) {
+    this.tracks = value;
   }
+
 }
-
-restourant.allTables(20);
-console.log(restourant.tables);
-restourant.canTakeTablet();
-console.log(restourant.freeTables);
-
-
 
