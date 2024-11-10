@@ -1266,15 +1266,58 @@
 //   }
 // }
 
-const person = {
-  name: westSide,
-  tracks: 30,
-  albom: 13,
-  concerts: 20,
-  repers: 10,
-  newTracks(value) {
-    this.tracks = value;
-  }
+// const person = {
+//   name: `westSide`,
+//   tracks: 30,
+//   albom: 13,
+//   concerts: 20,
+//   repers: 10,
+//   // newTracks(value) {
+//   //   this.tracks = value;
+//   // }
 
-}
+// }
 
+// for (const words in person) {
+//   console.log(words);
+  
+// }
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capacity: 100,
+// };
+
+// for (const key in hotel) {
+//   console.log('Key: ', key);
+// }
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capacity: 100,
+// };
+
+// const keys = Object.keys(hotel); 
+// const values = Object.values(hotel);
+// const entries = Object.entries(hotel);
+
+// console.log(entries);
+
+// const houses = ['Arryn', 'Frey', 'Greyjoy', 'Stark', 'Lannister', 'Tyrell'];
+// const housesInDebt = [...houses.slice(0, 4), ...houses.slice(5)];
+
+
+// console.log(housesInDebt);
+
+const a = { x: 1, y: 2 };
+const b = { x: 0, z: 3 };
+
+
+// const c = Object.assign({}, a, b);
+// console.log(c);
+
+
+const d = { ...a, ...b };
+console.log(d);
