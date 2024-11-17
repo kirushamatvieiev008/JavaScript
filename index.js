@@ -1311,13 +1311,101 @@
 
 // console.log(housesInDebt);
 
-const a = { x: 1, y: 2 };
-const b = { x: 0, z: 3 };
+// const a = { x: 1, : 2 };
+// const b = { x: 0, z: 3 };
 
 
 // const c = Object.assign({}, a, b);
 // console.log(c);
 
 
-const d = { ...a, ...b };
-console.log(d);
+// const d = { ...a, ...b };
+// console.log(d);
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capacity: 100,
+// };
+
+// const keys = Object.entries(hotel);
+// console.log(keys);
+
+
+// const goods = {
+//   apples: 6,
+//   grapes: 3,
+//   bread: 4,
+//   cheese: 7,
+// };
+
+// const values = Object.values(goods); // [6, 3, 4, 7]
+
+// let total = 0;
+
+// for (const value of values) {
+//   total += value;
+// }
+
+// console.log(total);
+
+// const first = [1, 2, 4, 3, 6, 7];
+// const second = [5, 8, 9, 0];
+
+// let third = [...first, ...second];
+
+// console.log(third);
+
+
+const products = [
+  {
+    nameProducts: `apple`,
+    price: 50,
+    category: `fruits`,
+    stock: 5,
+  },
+  {
+    nameProducts: `grape`,
+    price: 70,
+    category: `fruits`,
+    stock: 10,
+  },
+  {
+    nameProducts: `potato`,
+    price: 40,
+    category: `vegetables`,
+    stock: 15,
+  },
+  {
+    nameProducts: `candles`,
+    price: 110,
+    category: `decorations`,
+    stock: 15,
+  },
+  {
+    nameProducts: `bakery`,
+    price: 60,
+    category: `bakery`,
+    stock: 3,
+  }
+];
+
+// const q = prompt(`napushit categoriyu (bakery, decorations, vegetables, fruits)`);
+
+function getvalue(products, category) {
+  let total = 0;
+  for (const product of Object.values(products)) {
+    if (product.category === category && product.stock > 0) {
+      total += product.price * product.stock;
+      
+    }
+  }
+  return  total
+}
+
+
+// console.log(getvalue(products, ));
+
+const q = prompt(`qwerty`); 
+const totalValue = getvalue(products, q);
+console.log(`Загальна вартість товарів у категорії "${q}": ${totalValue}`);
