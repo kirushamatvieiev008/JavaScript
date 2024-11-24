@@ -1450,17 +1450,80 @@
 
 // let x;
 
-const first = {
-  name: `jnkjbkj`,
-  place: `kbjbjbj`,
-  starsFirst: 4,
-  qofivnqkjeefvb: `kjbkjvjhv`,
+// const first = {
+//   name: `jnkjbkj`,
+//   place: `kbjbjbj`,
+//   starsFirst: 4,
+//   qofivnqkjeefvb: `kjbkjvjhv`,
 
-}
+// }
 
-function getObjectLength(obj) {
-  return Object.keys(obj).length;
+// function getObjectLength(obj) {
+//   return Object.keys(obj).length;
 
-}
+// }
 
-console.log(getObjectLength(first));
+// console.log(getObjectLength(first));
+
+
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capacity: 100,
+// };
+
+// // Оголосимо змінні і дамо їм значення з об'єкта
+// const { name, stars, capacity } = hotel;
+
+// console.log(name, stars, capacity);
+
+
+// const cafee = {
+//   name: `Котокава`,
+//   waiter: `Oleksiy`,
+//   animals: `Pixel, Mike, Marcus`,
+//   tables: 4,
+//   inUkraine: true,
+//   menu: [`late`, `capuchino`, `shefkava`, `americanno`],
+//   lateConsists: {
+//     ingridient1: `milk`,
+//     ingridient2: `cacao`,
+//   }
+// }
+
+// const {name, menu: [item1, item2, item3, item4], lateConsists: {ingridient1, ingridient2: x}} = cafee;
+// // waiter = `Sasha`;
+
+// console.log(x);
+// console.log(cafee.wisitors);
+
+
+// let options = {
+//   size: {
+//     width: 100,
+//     height: 200
+//   },
+//   items: ["Cake", "Donut"],
+//   extra: true
+// };
+
+// // деструктуризація разбита на декілька рядків для розуміння
+// const {
+//   size: { // покладемо size сюди
+//     width,
+//     height
+//   },
+//   items: [item1, item2], // додамо елементи до items
+//   title = "Menu" // відсутня в об'єкті (використовується значення за замовчуванням)
+// } = options;
+
+// console.log(title);
+
+const rgb = [200, 255, 100];
+
+
+const [red, green, blue] = rgb;
+
+
+console.log(`Red: ${red}, Green: ${green}, Blue: ${blue}`);
