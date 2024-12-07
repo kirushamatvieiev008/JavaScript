@@ -1520,10 +1520,85 @@
 
 // console.log(title);
 
-const rgb = [200, 255, 100];
+// const rgb = [200, 255, 100];
 
 
-const [red, green, blue] = rgb;
+// const [red, green, blue] = rgb;
 
 
-console.log(`Red: ${red}, Green: ${green}, Blue: ${blue}`);
+// console.log(`Red: ${red}, Green: ${green}, Blue: ${blue}`);
+
+// let num1 = Math.round(Math.random() * 10);
+// // console.log(num1);
+
+
+
+// if (num1 > 7) {
+//   for ()
+// // }
+
+// let string = function (name_w, surname_w, age_w) {
+//   console.log(`Мене звати ${name_w} ${surname_w} і мені ${age_w} років`);
+//   return 
+  
+// }
+
+
+
+// const person = {
+//   name: 'Nelli',
+//   surname: 'Laroy',
+//   age: 25,
+// };
+
+// const {name, surname, age} = person;
+// string(name, surname, age);
+
+let x;
+
+const totalClothes = function(nameClothe, priceClothe, quantityClothe) {
+  return console.log(`ви купили ${nameClothe} котра коштує ${priceClothe} а кількість становить${quantityClothe} шт. вартість ${priceClothe * quantityClothe}`);
+  
+}
+
+const calculate = function(clotheFirst, clotheSecond, clotheThird) {
+  return x = clotheFirst + clotheSecond + clotheThird;
+}
+
+const totalTotal = function(total) {
+  return console.log(`ви придбали речей на таку суму: ${total}`);
+  
+}
+
+
+
+
+const items = [
+  { name: 'Футболка', price: 250, quantity: 2 },
+  { name: 'Джинси', price: 800, quantity: 1 },
+  { name: 'Кросівки', price: 1200, quantity: 1 }
+];
+
+
+
+// console.log(calculateTotalCost(items));
+
+
+
+function calculateTotalCost(item) {
+  let totalCost = 0;
+
+  for (let i = 0; i < item.length; i++) {
+    const { price, quantity } = item[i];
+    totalCost += price * quantity;
+  }
+
+  console.log(totalCost);
+  return totalCost;
+  
+}
+
+calculateTotalCost(items);
+// console.log(totalCost);
+
+
