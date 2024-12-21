@@ -1554,51 +1554,117 @@
 // const {name, surname, age} = person;
 // string(name, surname, age);
 
-let x;
+// let x;
 
-const totalClothes = function(nameClothe, priceClothe, quantityClothe) {
-  return console.log(`ви купили ${nameClothe} котра коштує ${priceClothe} а кількість становить${quantityClothe} шт. вартість ${priceClothe * quantityClothe}`);
+// const totalClothes = function(nameClothe, priceClothe, quantityClothe) {
+//   return console.log(`ви купили ${nameClothe} котра коштує ${priceClothe} а кількість становить${quantityClothe} шт. вартість ${priceClothe * quantityClothe}`);
   
-}
+// }
 
-const calculate = function(clotheFirst, clotheSecond, clotheThird) {
-  return x = clotheFirst + clotheSecond + clotheThird;
-}
+// const calculate = function(clotheFirst, clotheSecond, clotheThird) {
+//   return x = clotheFirst + clotheSecond + clotheThird;
+// }
 
-const totalTotal = function(total) {
-  return console.log(`ви придбали речей на таку суму: ${total}`);
+// const totalTotal = function(total) {
+//   return console.log(`ви придбали речей на таку суму: ${total}`);
   
-}
+// }
 
 
 
 
-const items = [
-  { name: 'Футболка', price: 250, quantity: 2 },
-  { name: 'Джинси', price: 800, quantity: 1 },
-  { name: 'Кросівки', price: 1200, quantity: 1 }
+// const items = [
+//   { name: 'Футболка', price: 250, quantity: 2 },
+//   { name: 'Джинси', price: 800, quantity: 1 },
+//   { name: 'Кросівки', price: 1200, quantity: 1 }
+// ];
+
+
+
+// // console.log(calculateTotalCost(items));
+
+
+
+// function calculateTotalCost(item) {
+//   let totalCost = 0;
+
+//   for (let i = 0; i < item.length; i++) {
+//     const { price, quantity } = item[i];
+//     totalCost += price * quantity;
+//   }
+
+//   console.log(totalCost);
+//   return totalCost;
+  
+// }
+
+// calculateTotalCost(items);
+// // console.log(totalCost);
+
+
+// const numbers = [1, 2, 3];
+
+
+// // Класичний for
+// // for (let i = 0; i < numbers.length; i += 1) {
+// //   console.log(numbers[i]);
+// // }
+
+// let x = [];
+
+
+// // Функціональний forEach
+// numbers.forEach(num => x.push(num));
+// console.log(x);
+
+// const users = [
+//   { name: 'Mango', isActive: true },
+// //   { name: 'Poly', isActive: false },
+// //   { name: 'Ajax', isActive: true },
+// // ];
+
+// // // Для кожного елемента колекції (user) повернемо значення поля name
+// // const names = users.map(user => user.name);
+
+// // console.log(names);
+
+// // const users = [
+// //   { name: 'Mango', isActive: true },
+// //   { name: 'Poly', isActive: false },
+// //   { name: 'Ajax', isActive: true },
+// //   { name: 'Chelsey', isActive: false },
+// // ];
+
+// // // Для кожного елемента колекції (user) перевіримо поле isActive.
+// // // Якщо воно true, то поточний елемент (user) буде записаний в результуючий масив.
+// // const activeUsers = users.filter(user => !user.isActive);
+// // console.log(activeUsers);
+
+// // const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// // let x = [];
+
+
+// // numbers.filter(num => x.push(num.Number() > 5));
+// // console.log(x);
+
+// const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+
+// console.log(numbers.find(num => num > 5));
+
+const fruits = [
+  { name: 'apples', amount: 100 },
+  { name: 'bananas', amount: 0 },
+  { name: 'grapes', amount: 50 },
 ];
 
+// every поверне true тільки якщо всіх фруктів буде більше ніж 0 штук
+const allAvailable = fruits.every(fruit => fruit.amount > 0); // false
 
+// some поверне true якщо хоча б одного фрукта буде більше ніж 0 штук
+const anyAvailable = fruits.some(fruits => fruits.amount > 0);
 
-// console.log(calculateTotalCost(items));
-
-
-
-function calculateTotalCost(item) {
-  let totalCost = 0;
-
-  for (let i = 0; i < item.length; i++) {
-    const { price, quantity } = item[i];
-    totalCost += price * quantity;
-  }
-
-  console.log(totalCost);
-  return totalCost;
-  
-}
-
-calculateTotalCost(items);
-// console.log(totalCost);
+console.log(allAvailable);
+console.log(anyAvailable);
 
 
