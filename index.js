@@ -1652,19 +1652,118 @@
 
 // console.log(numbers.find(num => num > 5));
 
-const fruits = [
-  { name: 'apples', amount: 100 },
-  { name: 'bananas', amount: 0 },
-  { name: 'grapes', amount: 50 },
-];
+// const fruits = [
+//   { name: 'apples', amount: 100 },
+//   { name: 'bananas', amount: 0 },
+//   { name: 'grapes', amount: 50 },
+// ];
 
-// every поверне true тільки якщо всіх фруктів буде більше ніж 0 штук
-const allAvailable = fruits.every(fruit => fruit.amount > 0); // false
+// // every поверне true тільки якщо всіх фруктів буде більше ніж 0 штук
+// const allAvailable = fruits.every(fruit => fruit.amount > 0); // false
 
-// some поверне true якщо хоча б одного фрукта буде більше ніж 0 штук
-const anyAvailable = fruits.some(fruits => fruits.amount > 0);
+// // some поверне true якщо хоча б одного фрукта буде більше ніж 0 штук
+// const anyAvailable = fruits.some(fruits => fruits.amount > 0);
 
-console.log(allAvailable);
-console.log(anyAvailable);
+// console.log(allAvailable);
+// console.log(anyAvailable);
 
 
+// const numbers = [1, 2, 3, 4, 5];
+
+
+// const summ = numbers.reduce((acc, value) => acc + value, 0);
+
+
+// console.log(summ);
+
+// const tweets = [
+//   { id: '000', likes: 5, tags: ['js', 'nodejs'] },
+//   // { id: '001', likes: 2, tags: ['html', 'css'] },
+//   // { id: '002', likes: 17, tags: ['html', 'js', 'nodejs'] },
+//   // { id: '003', likes: 8, tags: ['css', 'react'] },
+//   // { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
+// ];
+
+
+// // Пройдемо по всіх елементах колекції і додамо значення властивості likes
+// // до акумулятора, початкове значення якого вкажемо 0.
+
+// let o = [`hbbb`, `rrrrr`, `iiiiiii`];
+
+// const likes = tweets.reduce((totalLikes, tweet) => totalLikes + tweet.tags, 0);
+// const x = [...likes];
+
+
+
+// console.log(x.join(``));
+
+
+
+
+
+
+// const tweets = [
+//   { id: '000', likes: 5, tags: ['js', 'nodejs'] },
+//   { id: '001', likes: 2, tags: ['html', 'css'] },
+//   { id: '002', likes: 17, tags: ['html', 'js', 'nodejs'] },
+//   { id: '003', likes: 8, tags: ['css', 'react'] },
+//   { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
+// ];
+
+// // Пройдемо по всіх елементах колекції і додамо значення властивості tags
+// // до акумулятора, початкове значення якого вкажемо порожнім масивом [].
+// // На кожній ітерації пушим в акумулятор всі елементи tweet.tags і повертаємо його.
+// const tags = tweets.reduce((allTags, tweet) => {
+//   allTags.push(...tweet.tags);
+
+
+//   return allTags;
+// }, []);
+
+
+// console.log(tags);
+
+// const numbers = [2, 1, 4, 3, 5];
+// // Відсортує по зростанню
+// console.log('Before sort: ', numbers); // [2, 1, 4, 3, 5]
+// console.log('After sort: ', numbers.sort());
+
+// const clients = ['Mango', 'Ajax', 'Poly', 'Chelsey'];
+
+
+// // Відсортує за алфавітом
+// console.log('Before sort: ', clients); // ["Mango", "Ajax", "Poly", "Chelsey"]
+// console.log('After sort: ', clients.sort());
+
+// const users = [
+//   { name: 'Mango', daysActive: 15 },
+//   { name: 'Poly', daysActive: 4 },
+//   { name: 'Ajax', daysActive: 27 },
+//   { name: 'Chelsey', daysActive: 2 },
+// ];
+
+
+// const sortByActiveDays = (a, b) => a.daysActive - b.daysActive;
+
+
+// console.log(users.sort(sortByActiveDays));
+
+// const users = [
+//   { name: 'Mango', daysActive: 15 },
+//   { name: 'Poly', daysActive: 4 },
+//   { name: 'Ajax', daysActive: 27 },
+//   { name: 'Chelsey', daysActive: 2 },
+// ];
+
+// for (let i = 0; i < users.length - 1; i++) {
+//   for (let j = 0; j < users.length - 1 - i; j++) {
+//     if (users[j].daysActive > users[j + 1].daysActive) {
+//       // Обмін елементів місцями
+//       const temp = users[j];
+//       users[j] = users[j + 1];
+//       users[j + 1] = temp;
+//     }
+//   }
+// }
+
+// console.log(users);
