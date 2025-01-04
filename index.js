@@ -1821,20 +1821,92 @@
 // const reversed = doubled.reverse();
 // console.log(doubled);
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
 
-/*
- * Фільтруємо парні числа. Далі, на результаті методу filter,
- * Викликаємо map і множимо на 2. Після чого на результаті
- * Методу map викликаємо reverse.
- */
+// /*
+//  * Фільтруємо парні числа. Далі, на результаті методу filter,
+//  * Викликаємо map і множимо на 2. Після чого на результаті
+//  * Методу map викликаємо reverse.
+//  */
 
 
-const result = numbers
-  .filter(x => x % 2 === 0)
-  .map(y => y * 2)
-  .reverse();
+// const result = numbers
+//   .filter(x => x % 2 === 0)
+//   .map(y => y * 2)
+//   .reverse();
 
 
-console.log(result);
+// console.log(result);
+
+// const x = {
+//   eyes: 10,
+// };
+
+// const animal = {
+//   legs: 4,
+//  };
+//  const dog = Object.create(animal);
+//  dog.name = "Манго";
+//  dog.eyes = 5;
+
+//  console.log(dog);
+
+// const userName = prompt(`enter your name`);
+
+// class User {
+//   constructor(name, email, city, password) {
+//     this.name = name;
+//     this.email = email;
+//     this.city = city;
+//     this.password = password;
+//   }
+//  }
+ 
+// const sasha = new User(`Oleksandr`, `sanya1911@gmail.com`, `Kotsubinske`, `password`);
+// console.log(sasha);
+
+// class User {
+//   constructor(name, email, city, password) {
+//     this.name = name;
+//     this.email = email;
+//     this.city = city;
+//     this.password = password;
+//   }
+// }
+
+// const name = prompt("Enter your name:");
+// const email = prompt("Enter your email:");
+// const city = prompt("Enter your city:");
+// const password = prompt("Enter your password:");
+
+// const newUser = new User(name, email, city, password);
+
+// console.log("New User Created:", newUser);
+
+class User {
+  name;
+  #email;
+  
+  constructor({ name, email }) {
+    this.name = name;
+    this.#email = email;
+  }
+  
+  getEmail() {
+    return this.#email;
+  }
+ 
+  changeEmail(newEmail) {
+    this.#email = newEmail;
+  }
+ }
+ 
+ const mango = new User({
+  name: "Манго",
+  email: "mango@mail.com",
+ });
+
+ mango.changeEmail("mango@supermail.com");
+ console.log(mango.getEmail());
+//  console.log(mango.#email);
