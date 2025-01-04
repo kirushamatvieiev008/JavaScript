@@ -1767,3 +1767,74 @@
 // }
 
 // console.log(users);
+
+
+// const x = [`b`, `e`, `r`, `q`, `a`, `c`, `b`];
+
+// // console.log(x.sort());
+
+// // const sortByActiveDays = (a, b) => a.daysActive - b.daysActive;
+// const b = (a, b) => b. - a.x;
+// console.log(b);
+
+
+// const x = ['b', 'e', 'r', 'q', 'a', 'c', 'b'];
+
+// // Сортування за зростанням (алфавітний порядок)
+// console.log(x.sort());
+
+// // Сортування за спаданням
+// console.log(x.sort((a, b) => b.localeCompare(a)));
+
+
+// Массив з цінами товарів
+// const prices = [199.99, 89.99, 299.99, 159.99, 49.99];
+
+// // Сортування по зростанню
+// prices.sort((a, b) => a - b);
+// console.log('По зростанню:', prices);
+
+// // Сортування по спаданню
+// prices.sort((a, b) => b - a);
+// console.log('По спаданню:', prices);
+
+// Масив з іменами учнів
+// const students = ['Олена', 'Іван', 'Андрій', 'Марія', 'Богдан', 'Анна'];
+
+// // Сортування за алфавітом
+// students.sort((a, b) => a.localeCompare(b));
+// console.log('Сортування за алфавітом:', students);
+
+// // Якщо потрібно сортування в зворотному порядку:
+// students.sort((a, b) => b.localeCompare(a));
+// console.log('Сортування в зворотному порядку:', students);
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+
+// const even = numbers.filter(x => x % 2 === 0);
+
+
+// const doubled = even.map(x => x * 2);
+
+
+// const reversed = doubled.reverse();
+// console.log(doubled);
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+
+/*
+ * Фільтруємо парні числа. Далі, на результаті методу filter,
+ * Викликаємо map і множимо на 2. Після чого на результаті
+ * Методу map викликаємо reverse.
+ */
+
+
+const result = numbers
+  .filter(x => x % 2 === 0)
+  .map(y => y * 2)
+  .reverse();
+
+
+console.log(result);
