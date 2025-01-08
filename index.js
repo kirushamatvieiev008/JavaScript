@@ -1911,14 +1911,18 @@
 //  console.log(mango.getEmail());
 // //  console.log(mango.#email);
 
-const hotel = { 
-  name: `Resort Hotel`,
-  stars: 5,
-  capacity: 100,
-};
+// const hotel = { 
+//   name: `Resort Hotel`,
+//   stars: 5,
+//   capacity: 100,
+// };
 
-const entries = Object.entries(hotel);
+// const entries = Object.entries(hotel);
 
-for (const entry of entries) {
-  const key = 
-}
+// for (const entry of entries) {
+//   const key = 
+// }
+
+
+
+// console.log(Math.max(...mstring));
