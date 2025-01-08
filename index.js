@@ -1884,29 +1884,41 @@
 
 // console.log("New User Created:", newUser);
 
-class User {
-  name;
-  #email;
+// class User {
+//   name;
+//   #email;
   
-  constructor({ name, email }) {
-    this.name = name;
-    this.#email = email;
-  }
+//   constructor({ name, email }) {
+//     this.name = name;
+//     this.#email = email;
+//   }
   
-  getEmail() {
-    return this.#email;
-  }
+//   getEmail() {
+//     return this.#email;
+//   }
  
-  changeEmail(newEmail) {
-    this.#email = newEmail;
-  }
- }
+//   changeEmail(newEmail) {
+//     this.#email = newEmail;
+//   }
+//  }
  
- const mango = new User({
-  name: "Манго",
-  email: "mango@mail.com",
- });
+//  const mango = new User({
+//   name: "Манго",
+//   email: "mango@mail.com",
+//  });
 
- mango.changeEmail("mango@supermail.com");
- console.log(mango.getEmail());
-//  console.log(mango.#email);
+//  mango.changeEmail("mango@supermail.com");
+//  console.log(mango.getEmail());
+// //  console.log(mango.#email);
+
+const hotel = { 
+  name: `Resort Hotel`,
+  stars: 5,
+  capacity: 100,
+};
+
+const entries = Object.entries(hotel);
+
+for (const entry of entries) {
+  const key = 
+}
