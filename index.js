@@ -1926,3 +1926,103 @@
 
 
 // console.log(Math.max(...mstring));
+
+
+// const baseSalary = 30000;
+// const overtime = 10;
+// const rate = 20;
+
+
+// const getWage = (baseSalary, overtime, rate) => {
+//   return baseSalary + overtime * rate;
+// };
+
+
+// console.log(getWage(baseSalary, overtime, rate));
+
+// class Car {
+//   constructor(brand, model, year, color, tuned) {
+//     this.brand = brand; 
+//     this.model = model; 
+//     this.year = year;   
+//     this.color = color;
+//     this.tuned = tuned;
+//   };
+
+//   getDescription() {
+//     return `This is a ${this.color} ${this.brand} ${this.model} from ${this.year}, is tuned: ${this.tuned}.`;
+//   };
+
+//   repaint(newColor) {
+//     this.color = newColor;
+//     return `The car has been repainted to ${newColor}.`;
+//   };
+
+//   getTUning(tuna) {
+//     this.tuned = tuna;
+//     return `you has tuned your car so instead base car you have tuned car, and thats ${tuna}`;
+//   }
+// };
+
+// const myCar = new Car('Toyota', 'Camry', 2020, 'blue', false);
+
+// console.log(myCar.getDescription()); 2020.
+// console.log(myCar.repaint('red'));   
+// console.log(myCar.getDescription()); 2020
+
+// const porsche = new Car(`Porsche`, 911, 2024, `black`, false);
+// console.log(porsche.getTUning(true));
+// console.log(porsche.getDescription());
+
+class User {
+  constructor(name, email) {
+    this.name = name;
+    this.email = email;
+  }
+
+  getInfo() {
+    return `User: ${this.name}, Email: ${this.email}`;
+  }
+}
+
+class Admin extends User {
+  constructor(name, email, adminLevel) {
+    super(name, email);
+    this.adminLevel = adminLevel;
+  }
+
+  blockUser(user) {
+    return `Admin ${this.name} has blocked user ${user.name}.`;
+  }
+
+  getInfo() {
+    return `Admin: ${this.name}, Email: ${this.email}, Level: ${this.adminLevel}`;
+  }
+}
+
+class ContentManager extends User {
+  constructor(name, email, managedContent) {
+    super(name, email);
+    this.managedContent = managedContent;
+  }
+
+  createContent(content) {
+    this.managedContent.push(content);
+    return `ContentManager ${this.name} has created new content: "${content}".`;
+  }
+
+  getInfo() {
+    return `Content Manager: ${this.name}, Email: ${this.email}, Managed Content: ${this.managedContent.join(", ")}`;
+  }
+}
+
+const user = new User("John Doe", "john@example.com");
+const admin = new Admin("Alice", "alice@example.com", "Super Admin");
+const contentManager = new ContentManager("Bob", "bob@example.com", ["Blog Post", "Video Tutorial"]);
+
+console.log(user.getInfo());
+console.log(admin.getInfo());
+console.log(admin.blockUser(user));
+// console.log(contentManager.getInfo());
+// console.log(contentManager.createContent("Podcast Episode"));
+// console.log(contentManager.getInfo());
