@@ -1974,55 +1974,77 @@
 // console.log(porsche.getTUning(true));
 // console.log(porsche.getDescription());
 
-class User {
-  constructor(name, email) {
-    this.name = name;
-    this.email = email;
-  }
+// class User {
+//   constructor(name, email) {
+//     this.name = name;
+//     this.email = email;
+//   }
 
-  getInfo() {
-    return `User: ${this.name}, Email: ${this.email}`;
-  }
-}
+//   getInfo() {
+//     return `User: ${this.name}, Email: ${this.email}`;
+//   }
+// }
 
-class Admin extends User {
-  constructor(name, email, adminLevel) {
-    super(name, email);
-    this.adminLevel = adminLevel;
-  }
+// class Admin extends User {
+//   constructor(name, email, adminLevel) {
+//     super(name, email);
+//     this.adminLevel = adminLevel;
+//   }
 
-  blockUser(user) {
-    return `Admin ${this.name} has blocked user ${user.name}.`;
-  }
+//   blockUser(user) {
+//     return `Admin ${this.name} has blocked user ${user.name}.`;
+//   }
 
-  getInfo() {
-    return `Admin: ${this.name}, Email: ${this.email}, Level: ${this.adminLevel}`;
-  }
-}
+//   getInfo() {
+//     return `Admin: ${this.name}, Email: ${this.email}, Level: ${this.adminLevel}`;
+//   }
+// }
 
-class ContentManager extends User {
-  constructor(name, email, managedContent) {
-    super(name, email);
-    this.managedContent = managedContent;
-  }
+// class ContentManager extends User {
+//   constructor(name, email, managedContent) {
+//     super(name, email);
+//     this.managedContent = managedContent;
+//   }
 
-  createContent(content) {
-    this.managedContent.push(content);
-    return `ContentManager ${this.name} has created new content: "${content}".`;
-  }
+//   createContent(content) {
+//     this.managedContent.push(content);
+//     return `ContentManager ${this.name} has created new content: "${content}".`;
+//   }
 
-  getInfo() {
-    return `Content Manager: ${this.name}, Email: ${this.email}, Managed Content: ${this.managedContent.join(", ")}`;
-  }
-}
+//   getInfo() {
+//     return `Content Manager: ${this.name}, Email: ${this.email}, Managed Content: ${this.managedContent.join(", ")}`;
+//   }
+// }
 
-const user = new User("John Doe", "john@example.com");
-const admin = new Admin("Alice", "alice@example.com", "Super Admin");
-const contentManager = new ContentManager("Bob", "bob@example.com", ["Blog Post", "Video Tutorial"]);
+// const user = new User("John Doe", "john@example.com");
+// const admin = new Admin("Alice", "alice@example.com", "Super Admin");
+// const contentManager = new ContentManager("Bob", "bob@example.com", ["Blog Post", "Video Tutorial"]);
 
-console.log(user.getInfo());
-console.log(admin.getInfo());
-console.log(admin.blockUser(user));
+// console.log(user.getInfo());
+// console.log(admin.getInfo());
+// console.log(admin.blockUser(user));
 // console.log(contentManager.getInfo());
 // console.log(contentManager.createContent("Podcast Episode"));
 // console.log(contentManager.getInfo());
+
+
+
+// const button = document.querySelector(`.btn`);
+
+// button.style.backgroundColor = `red`;
+// button.style.padding = `50px`;
+// button.style.color = `black`;
+// button.style.marginTop = `150px`;
+
+// const ul = document.querySelector(`.lists`);
+// ul.style.display = `flex`;
+// ul.style.flexDirection = `column`;
+
+// const listFirst = document.querySelector(`.list1`);
+// const listSecond = document.querySelector(`.list2`);
+// const listThird = document.querySelector(`.list3`);
+
+// listFirst.style.backgroundColor = `red`;
+// listThird.style.backgroundColor = `blue`;
+// listSecond.style.backgroundColor = `rgba(132, 165, 42, 0.89)`;
+// listSecond.style.color = `black`;
