@@ -2048,3 +2048,17 @@
 // listThird.style.backgroundColor = `blue`;
 // listSecond.style.backgroundColor = `rgba(132, 165, 42, 0.89)`;
 // listSecond.style.color = `black`;
+
+const image = document.querySelector('.img');
+image.src = 'image_netbook.png';
+image.style.width = '300px';
+image.style.height = '400px';
+
+const pole = document.querySelector('.pole');
+const paradise = document.querySelector('.paradise');
+
+pole.addEventListener('input', () => {
+  const inputValue = pole.value; 
+  paradise.textContent = `You have entered: ${inputValue}`;
+});
+
