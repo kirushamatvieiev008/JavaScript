@@ -2065,39 +2065,100 @@
 
 
 
-const heading = document.createElement("li");
-heading.textContent = `helo world`;
+// const heading = document.createElement("li");
+// heading.textContent = `helo world`;
 
 
-// const text = document.querySelector(`.txt`);
-// text.style.width = `200px`;
-// text.style.backgroundColor = `red`;
-// text.style.padding = `50px`;
-// text.style.borderRadius = `5px`;
+// // const text = document.querySelector(`.txt`);
+// // text.style.width = `200px`;
+// // text.style.backgroundColor = `red`;
+// // text.style.padding = `50px`;
+// // text.style.borderRadius = `5px`;
 
-// text.before(heading)
+// // text.before(heading)
 
 
-// console.log(heading);
+// // console.log(heading);
 
-const lists = document.querySelector(`.lists`);
+// const lists = document.querySelector(`.lists`);
 
-const liFirst = document.querySelector(`.list1`);
-const liSecond = document.querySelector(`.list2`);
-const liThird = document.querySelector(`.list3`);
-const liFourth = document.querySelector(`.list4`);
-const liFifth = document.querySelector(`.list5`);
+// const liFirst = document.querySelector(`.list1`);
+// const liSecond = document.querySelector(`.list2`);
+// const liThird = document.querySelector(`.list3`);
+// const liFourth = document.querySelector(`.list4`);
+// const liFifth = document.querySelector(`.list5`);
 
-liFirst.style.backgroundColor = (`red`);
-liSecond.style.backgroundColor = (`red`);
-liThird.style.backgroundColor = (`red`);
-liFourth.style.backgroundColor = (`red`);
-liFifth.style.backgroundColor = (`red`);
+// liFirst.style.backgroundColor = (`red`);
+// liSecond.style.backgroundColor = (`red`);
+// liThird.style.backgroundColor = (`red`);
+// liFourth.style.backgroundColor = (`red`);
+// liFifth.style.backgroundColor = (`red`);
 
-liFirst.remove();
+// liFirst.remove();
 
 // text.before(heading)
 // text.after(heading)
 // text.(heading)
 // text.before(heading)
 // text.before(heading)
+
+
+// lesson 12
+
+// task1
+
+// let user = {
+
+//   hobby: `boxing`,
+//   premium: true,
+
+// }
+
+// user.mood = `happy`;
+// user.hobby = `skydiving`;
+// user.premium = false;
+// console.log(user);
+
+
+// task2
+
+// const x = {
+//   name: `Bukovel`,
+//   stars: 5,
+//   capacity: 200,
+// }
+
+// const countProps = function(value) {
+//   console.log(Object.keys(value));
+  
+// };
+
+// countProps(x)
+
+// task3
+
+const workers = {
+  vasya: 25,
+  petya: 30,
+  nastya: 15,
+}
+
+
+
+const findBestEmployee = function(employees) {
+  let x = [];
+  for (const entrie of employees) {
+    const key = entrie[0];
+    x.push(key)
+    const value = entrie[1];
+    x.push(value)
+  };
+  console.log(x);
+  
+  // console.log(`${x.indexOf(Math.max(...workers.value - 1))}: ${x.indexOf(Math.max(...workers.value))}`);
+  
+
+  
+}
+
+findBestEmployee(workers)
