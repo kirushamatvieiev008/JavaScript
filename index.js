@@ -2049,16 +2049,55 @@
 // listSecond.style.backgroundColor = `rgba(132, 165, 42, 0.89)`;
 // listSecond.style.color = `black`;
 
-const image = document.querySelector('.img');
-image.src = 'image_netbook.png';
-image.style.width = '300px';
-image.style.height = '400px';
+// const image = document.querySelector('.img');
+// image.src = 'image_netbook.png';
+// image.style.width = '300px';
+// image.style.height = '400px';
 
-const pole = document.querySelector('.pole');
-const paradise = document.querySelector('.paradise');
+// const pole = document.querySelector('.pole');
+// const paradise = document.querySelector('.paradise');
 
-pole.addEventListener('input', () => {
-  const inputValue = pole.value; 
-  paradise.textContent = `You have entered: ${inputValue}`;
-});
+// pole.addEventListener('input', () => {
+//   const inputValue = pole.value; 
+//   paradise.textContent = `You have entered: ${inputValue}`;
+// });
 
+
+
+
+const heading = document.createElement("li");
+heading.textContent = `helo world`;
+
+
+// const text = document.querySelector(`.txt`);
+// text.style.width = `200px`;
+// text.style.backgroundColor = `red`;
+// text.style.padding = `50px`;
+// text.style.borderRadius = `5px`;
+
+// text.before(heading)
+
+
+// console.log(heading);
+
+const lists = document.querySelector(`.lists`);
+
+const liFirst = document.querySelector(`.list1`);
+const liSecond = document.querySelector(`.list2`);
+const liThird = document.querySelector(`.list3`);
+const liFourth = document.querySelector(`.list4`);
+const liFifth = document.querySelector(`.list5`);
+
+liFirst.style.backgroundColor = (`red`);
+liSecond.style.backgroundColor = (`red`);
+liThird.style.backgroundColor = (`red`);
+liFourth.style.backgroundColor = (`red`);
+liFifth.style.backgroundColor = (`red`);
+
+liFirst.remove();
+
+// text.before(heading)
+// text.after(heading)
+// text.(heading)
+// text.before(heading)
+// text.before(heading)
