@@ -2137,28 +2137,68 @@
 
 // task3
 
-const workers = {
-  vasya: 25,
-  petya: 30,
-  nastya: 15,
+// const workers = {
+//   vasya: 25,
+//   petya: 30,
+//   nastya: 15,
+// }
+
+
+
+
+// const findBestEmployee = function(employees) {
+//   let x = [];
+//   let y = [];
+//   for (const key in workers) {
+//     x.push(key)
+//     y.push(workers[key])
+    
+    
+//   };
+
+//   let b;
+//   b = y.indexOf(Math.max(...y))
+//   console.log(`${x[b]}: ${y[b]}`);  
+// }
+
+// findBestEmployee(workers);
+
+// task4
+
+
+
+let workers = {
+  vasya: 3000,
+  petya: 2500,
+  nastya: 1500,
 }
 
+let y = [];
+let x = [];
 
+let p = [];
 
-const findBestEmployee = function(employees) {
-  let x = [];
-  for (const entrie of employees) {
-    const key = entrie[0];
-    x.push(key)
-    const value = entrie[1];
-    x.push(value)
-  };
-  console.log(x);
-  
-  // console.log(`${x.indexOf(Math.max(...workers.value - 1))}: ${x.indexOf(Math.max(...workers.value))}`);
-  
-
-  
+const countTotalSalary = function(employees) {
+  for (const worker in employees) {
+    p.push(employees[worker]);
+    
+    
+  }
+  let total = 0;
+  for (let i = 0; i < p.length; i ++) {
+    total += p[i]
+  }
+  console.log(total);
 }
+countTotalSalary(workers)
 
-findBestEmployee(workers)
+// console.log(p);
+
+
+// console.log(Object.entries(workers));
+
+
+
+// const countTotalSalary = function(employees) {
+  
+// }
