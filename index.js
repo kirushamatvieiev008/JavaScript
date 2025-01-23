@@ -2167,38 +2167,30 @@
 
 
 
-let workers = {
-  vasya: 3000,
-  petya: 2500,
-  nastya: 1500,
-}
+// let workers = {
+//   vasya: 3000,
+//   petya: 2500,
+//   nastya: 1500,
+// }
 
-let y = [];
-let x = [];
+// let y = [];
+// let x = [];
 
-let p = [];
-
-const countTotalSalary = function(employees) {
-  for (const worker in employees) {
-    p.push(employees[worker]);
-    
-    
-  }
-  let total = 0;
-  for (let i = 0; i < p.length; i ++) {
-    total += p[i]
-  }
-  console.log(total);
-}
-countTotalSalary(workers)
-
-// console.log(p);
-
-
-// console.log(Object.entries(workers));
-
-
+// let p = [];
 
 // const countTotalSalary = function(employees) {
-  
+//   for (const worker in employees) {
+//     p.push(employees[worker]);
+    
+    
+//   }
+//   let total = 0;
+//   for (let i = 0; i < p.length; i ++) {
+//     total += p[i]
+//   }
+//   console.log(total);
 // }
+// countTotalSalary(workers)
+
+// task5
+
