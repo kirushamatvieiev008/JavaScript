@@ -2151,7 +2151,7 @@
 //   let y = [];
 //   for (const key in workers) {
 //     x.push(key)
-//     y.push(workers[key])
+//     y.push(employees[key])
     
     
 //   };
@@ -2162,6 +2162,24 @@
 // }
 
 // findBestEmployee(workers);
+
+
+
+// const workers = {
+//   vasya: 25,
+//   petya: 30,
+//   nastya: 15,
+// };
+
+// const findBestEmployee = function(employees) {
+//   const bestEmployee = Object.entries(employees).reduce((best, current) => 
+//     current[1] > best[1] ? current : best
+//   );
+//   console.log(`${bestEmployee[0]}: ${bestEmployee[1]}`);
+// };
+
+// findBestEmployee(workers);
+
 
 // task4
 
@@ -2194,3 +2212,35 @@
 
 // task5
 
+
+
+
+const products = [
+  { id: 1, name: "Кросівки", price: 1200 },
+  { id: 2, name: "Чоботи", price: 2500 },
+  { id: 3, name: "Лофери", price: 1800 },
+  { id: 3, name: "sweatshot lacoste", price: 18000 },
+];
+
+document.getElementById("load-products").addEventListener("click", () => {
+  const productList = document.getElementById("product-list");
+
+  const productMarkup = products
+    .map(
+      (product) =>
+        `<div class="product-card">
+          <h3>${product.name}</h3>
+          <p>Ціна: ${product.price} грн</p>
+        </div>`
+    )
+    .join("");
+
+  productList.innerHTML = productMarkup;
+});
+
+
+document.getElementById(`close-products`).addEventListener(`click`, () => {
+  const productList = document.getElementById("product-list");
+
+  productList.innerHTML = 'zx';
+})
