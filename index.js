@@ -2215,32 +2215,99 @@
 
 
 
-const products = [
-  { id: 1, name: "Кросівки", price: 1200 },
-  { id: 2, name: "Чоботи", price: 2500 },
-  { id: 3, name: "Лофери", price: 1800 },
-  { id: 3, name: "sweatshot lacoste", price: 18000 },
-];
+// const products = [
+//   { id: 1, name: "Кросівки", price: 1200 },
+//   { id: 2, name: "Чоботи", price: 2500 },
+//   { id: 3, name: "Лофери", price: 1800 },
+//   { id: 3, name: "sweatshot lacoste", price: 18000 },
+// ];
 
-document.getElementById("load-products").addEventListener("click", () => {
-  const productList = document.getElementById("product-list");
+// document.getElementById("load-products").addEventListener("click", () => {
+//   const productList = document.getElementById("product-list");
 
-  const productMarkup = products
-    .map(
-      (product) =>
-        `<div class="product-card">
-          <h3>${product.name}</h3>
-          <p>Ціна: ${product.price} грн</p>
-        </div>`
-    )
-    .join("");
+//   const productMarkup = products
+//     .map(
+//       (product) =>
+//         `<div class="product-card">
+//           <h3>${product.name}</h3>
+//           <p>Ціна: ${product.price} грн</p>
+//         </div>`
+//     )
+//     .join("");
 
-  productList.innerHTML = productMarkup;
-});
+//   productList.innerHTML = productMarkup;
+// });
 
 
-document.getElementById(`close-products`).addEventListener(`click`, () => {
-  const productList = document.getElementById("product-list");
+// document.getElementById(`close-products`).addEventListener(`click`, () => {
+//   const productList = document.getElementById("product-list");
 
-  productList.innerHTML = 'zx';
-})
+//   productList.innerHTML = 'zx';
+// })
+
+
+
+// const singleBtn = document.querySelector('#single');
+
+// // Для обработчика события можно (и желательно) 
+// // использовать отдельную функцию, ссылку на которую 
+// // передаем вторым аргументом в addEventListener
+// const handleClick = () => alert('CLICK!');
+
+// singleBtn.addEventListener('click', handleClick);
+
+
+// //========================================================
+// // Можно вешать более одного обработчика на элемент, 
+// // даже на одно и тоже событие
+// const multiBtn = document.querySelector('#multiple');
+
+// const firstCallback = () => alert('First callback!');
+// const secondCallback = () => alert('Second callback!');
+// const thirdCallback = () => alert('Third callback!');
+
+// multiBtn.addEventListener('click', firstCallback);
+// multiBtn.addEventListener('click', secondCallback);
+// multiBtn.addEventListener('click', thirdCallback);
+
+
+const btn = document.getElementById(`single`);
+const body = document.querySelector(`body`);
+const modal = document.querySelector(`.modal`);
+const closee = document.querySelector(`.close_modal`);
+const addTxt = document.querySelector(`.add_txt`);
+const delet = document.querySelector(`.delet`);
+const p = document.createElement('p');
+
+const openModal = () => {
+  // body.style.backgroundColor = `red`;
+  body.style.backgroundColor = `red`
+  modal.style.backgroundColor = `white`;
+  modal.style.width = `200px`;
+  modal.style.height = `100px`;
+  modal.style.display = `block`;
+
+}
+
+const clodeModal = () => {
+  modal.style.display = 'none';
+  body.style.backgroundColor = `white`;
+  p.style.display = `none`;
+  // delet.style.display = `none`;
+}
+
+const addedText = () => {
+  const p = document.createElement('p');
+  p.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione maiores tempora commodi error inventore numquam distinctio harum maxime quos reiciendis.';
+  modal.appendChild(p);
+}
+
+const deletedText = () => {
+  const allp = document.querySelectorAll(`p`);
+  allp.remove();
+}
+
+btn.addEventListener('click', openModal);
+closee.addEventListener('click', clodeModal);
+addTxt.addEventListener(`click`, addedText)
+delet.addEventListener(`click`, deletedText)
