@@ -2270,6 +2270,7 @@
 // multiBtn.addEventListener('click', secondCallback);
 // multiBtn.addEventListener('click', thirdCallback);
 
+const textDiv = prompt(`enter text which you want to see in modal`);
 
 const btn = document.getElementById(`single`);
 const body = document.querySelector(`body`);
@@ -2278,36 +2279,73 @@ const closee = document.querySelector(`.close_modal`);
 const addTxt = document.querySelector(`.add_txt`);
 const delet = document.querySelector(`.delet`);
 const p = document.createElement('p');
+modal.appendChild(p);
+
+p.style.display = `none`;
+
 
 const openModal = () => {
-  // body.style.backgroundColor = `red`;
-  body.style.backgroundColor = `red`
-  modal.style.backgroundColor = `white`;
-  modal.style.width = `200px`;
-  modal.style.height = `100px`;
   modal.style.display = `block`;
-
+  modal.style.backgroundColor = `red`;
+  modal.style.width = `500px`;
+  modal.style.height = `300px`;
 }
 
-const clodeModal = () => {
-  modal.style.display = 'none';
-  body.style.backgroundColor = `white`;
+const closeModal = () => {
   p.style.display = `none`;
-  // delet.style.display = `none`;
+  modal.style.display = `none`;
 }
 
-const addedText = () => {
-  const p = document.createElement('p');
-  p.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione maiores tempora commodi error inventore numquam distinctio harum maxime quos reiciendis.';
-  modal.appendChild(p);
+const addText = () => {
+  p.textContent = `your text: ${textDiv}`;
+  p.style.display = `block`;
 }
 
 const deletedText = () => {
-  const allp = document.querySelectorAll(`p`);
-  allp.remove();
+  p.style.display = `none`;
 }
 
-btn.addEventListener('click', openModal);
-closee.addEventListener('click', clodeModal);
-addTxt.addEventListener(`click`, addedText)
-delet.addEventListener(`click`, deletedText)
+btn.addEventListener(`click`, openModal);
+closee.addEventListener(`click`, closeModal);
+addTxt.addEventListener(`click`, addText);
+delet.addEventListener(`click`, deletedText);
+
+
+
+
+
+
+
+
+// const openModal = () => {
+  //   // body.style.backgroundColor = `red`;
+  //   body.style.backgroundColor = `red`
+//   modal.style.backgroundColor = `white`;
+//   modal.style.width = `200px`;
+//   modal.style.height = `100px`;
+//   modal.style.display = `block`;
+
+// }
+
+// const clodeModal = () => {
+//   modal.style.display = 'none';
+//   body.style.backgroundColor = `white`;
+//   p.style.display = `none`;
+//   // delet.style.display = `none`;
+// }
+
+// const addedText = () => {
+//   const p = document.createElement('p');
+//   p.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione maiores tempora commodi error inventore numquam distinctio harum maxime quos reiciendis.';
+//   modal.appendChild(p);
+// }
+
+// const deletedText = () => {
+//   const allp = document.querySelectorAll(`p`);
+//   allp.remove();
+// }
+
+// btn.addEventListener('click', openModal);
+// closee.addEventListener('click', clodeModal);
+// addTxt.addEventListener(`click`, addedText)
+// delet.addEventListener(`click`, deletedText)
