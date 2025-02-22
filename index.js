@@ -2270,45 +2270,45 @@
 // multiBtn.addEventListener('click', secondCallback);
 // multiBtn.addEventListener('click', thirdCallback);
 
-const textDiv = prompt(`enter text which you want to see in modal`);
+// const textDiv = prompt(`enter text which you want to see in modal`);
 
-const btn = document.getElementById(`single`);
-const body = document.querySelector(`body`);
-const modal = document.querySelector(`.modal`);
-const closee = document.querySelector(`.close_modal`);
-const addTxt = document.querySelector(`.add_txt`);
-const delet = document.querySelector(`.delet`);
-const p = document.createElement('p');
-modal.appendChild(p);
+// const btn = document.getElementById(`single`);
+// const body = document.querySelector(`body`);
+// const modal = document.querySelector(`.modal`);
+// const closee = document.querySelector(`.close_modal`);
+// const addTxt = document.querySelector(`.add_txt`);
+// const delet = document.querySelector(`.delet`);
+// const p = document.createElement('p');
+// modal.appendChild(p);
 
-p.style.display = `none`;
+// p.style.display = `none`;
 
 
-const openModal = () => {
-  modal.style.display = `block`;
-  modal.style.backgroundColor = `red`;
-  modal.style.width = `500px`;
-  modal.style.height = `300px`;
-}
+// const openModal = () => {
+//   modal.style.display = `block`;
+//   modal.style.backgroundColor = `red`;
+//   modal.style.width = `500px`;
+//   modal.style.height = `300px`;
+// }
 
-const closeModal = () => {
-  p.style.display = `none`;
-  modal.style.display = `none`;
-}
+// const closeModal = () => {
+//   p.style.display = `none`;
+//   modal.style.display = `none`;
+// }
 
-const addText = () => {
-  p.textContent = `your text: ${textDiv}`;
-  p.style.display = `block`;
-}
+// const addText = () => {
+//   p.textContent = `your text: ${textDiv}`;
+//   p.style.display = `block`;
+// }
 
-const deletedText = () => {
-  p.style.display = `none`;
-}
+// const deletedText = () => {
+//   p.style.display = `none`;
+// }
 
-btn.addEventListener(`click`, openModal);
-closee.addEventListener(`click`, closeModal);
-addTxt.addEventListener(`click`, addText);
-delet.addEventListener(`click`, deletedText);
+// btn.addEventListener(`click`, openModal);
+// closee.addEventListener(`click`, closeModal);
+// addTxt.addEventListener(`click`, addText);
+// delet.addEventListener(`click`, deletedText);
 
 
 
@@ -2349,3 +2349,26 @@ delet.addEventListener(`click`, deletedText);
 // closee.addEventListener('click', clodeModal);
 // addTxt.addEventListener(`click`, addedText)
 // delet.addEventListener(`click`, deletedText)
+
+
+// document.addEventListener("keydown", event => {
+//   console.log("Keydown: ", event);
+//  });
+ 
+//  document.addEventListener("keyup", event => {
+//   console.log("Keyup: ", event);
+//  });
+
+
+// document.addEventListener("keydown", event => {
+//   console.log("key: ", event.key);
+//   console.log("code: ", event.code);
+//  });
+
+document.addEventListener("keydown", event => {
+  event.preventDefault();
+ 
+  if ((event.ctrlKey || event.metaKey) && event.code === "KeyS") {
+    console.log("«Ctrl + s» or «Command + s» combo");
+  }
+ });
