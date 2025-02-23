@@ -2365,10 +2365,52 @@
 //   console.log("code: ", event.code);
 //  });
 
-document.addEventListener("keydown", event => {
-  event.preventDefault();
+// document.addEventListener("keydown", event => {
+//   event.preventDefault();
  
-  if ((event.ctrlKey || event.metaKey) && event.code === "KeyS") {
-    console.log("«Ctrl + s» or «Command + s» combo");
-  }
- });
+//   if ((event.ctrlKey || event.metaKey) && event.code === "KeyS") {
+//     console.log("«Ctrl + s» or «Command + s» combo");
+//   }
+//  });
+
+
+const box = document.getElementById("box");
+
+box.addEventListener("mousedown", () => {
+    box.textContent = "mousedown: Натиснуто";
+    box.style.backgroundColor = "coral";
+});
+
+box.addEventListener("mouseup", () => {
+    box.textContent = "mouseup: Відпущено";
+    box.style.backgroundColor = "lightblue";
+});
+
+box.addEventListener("mouseover", () => {
+    box.textContent = "mouseover: Курсор зайшов";
+});
+
+box.addEventListener("mouseout", () => {
+    box.textContent = "mouseout: Курсор вийшов";
+});
+
+box.addEventListener("mousemove", () => {
+    console.log("mousemove: Рух миші");
+    box.style.backgroundColor = "rgb(79, 0, 124)";
+});
+
+box.addEventListener("click", () => {
+    box.textContent = "click: Клік!";
+    box.style.backgroundColor = "green";
+});
+
+box.addEventListener("dblclick", () => {
+    box.textContent = "dblclick: Подвійний клік!";
+    box.style.backgroundColor = "gold";
+});
+
+box.addEventListener("contextmenu", (event) => {
+    event.preventDefault(); // Відміняємо стандартне контекстне меню
+    box.textContent = "contextmenu: Меню правої кнопки!";
+    box.style.backgroundColor = "red";
+});
